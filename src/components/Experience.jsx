@@ -12,7 +12,7 @@ export const Experience = () => {
       <div className='flex flex-col items-center gap-5'>
         <div className="div-content bg-trans-1 p-3 my-2 round-2">
           <div className="medium-text p-2">
-              <span className="big-text">1</span><span className="pi-2"></span>Junior Web Developer
+              <span className="big-text">1</span><span className="pi-2"></span>Technical Support & Software Developer
           </div>
           <div className="company px-3 inline-flex items-center gap-2 w-full">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className='text-slate-500 h-7 w-7 max-sm:h-5 max-sm:w-5'>
