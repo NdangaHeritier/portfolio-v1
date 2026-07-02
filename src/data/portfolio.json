@@ -1,0 +1,384 @@
+{
+  "profile": {
+    "name": "Ndanga Heritier Umuragwa",
+    "displayName": "Ndanga Heritier",
+    "handle": "dev.ndanga",
+    "title": "Full-Stack Web Developer",
+    "tagline": "Full-stack developer and technical support professional building practical web platforms, API-driven dashboards, and customer-focused digital solutions.",
+    "summary": "I build responsive web applications and operational platforms with React.js, Firebase, Pocketbase, Supabase, MongoDB, NextJs, TypeScript, Laravel, PHP, MySQL, and REST APIs. My experience combines software delivery, API integration, technical support, documentation, customer service, and quality assurance, giving me a practical view of how technology supports real users and business operations.",
+    "resumeFile": "/CV_Heritier.pdf",
+    "email": "ndangahertier@gmail.com",
+    "phone": "+250786859758",
+    "phoneDisplay": "+250 786 859 758",
+    "location": "Kigali, Rwanda",
+    "socials": [
+      {
+        "name": "LinkedIn",
+        "url": "https://linkedin.com/in/ndanga-heritier",
+        "icon": "linkedin"
+      },
+      {
+        "name": "Twitter",
+        "url": "https://x.com/UmuragwaH50768",
+        "icon": "twitter"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://instagram.com/ndangaheritier",
+        "icon": "instagram"
+      },
+      {
+        "name": "Facebook",
+        "url": "https://facebook.com/ndangaheritier",
+        "icon": "facebook"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/NdangaHeritier",
+        "icon": "github"
+      }
+    ]
+  },
+  "about": {
+    "paragraphs": [
+      "I am a full-stack web developer focused on building useful, reliable systems for teams and customers. My work spans developer-first platforms, dashboards, booking systems, telemedicine workflows, ride-sharing tools, and multi-sided commerce platforms.",
+      "Beyond development, I bring hands-on experience in technical support, after-sales service, warranty coordination, vehicle inspection, quality assurance, reporting, and client relationship management. That mix helps me design software with a strong understanding of user needs, operational processes, and delivery standards.",
+      "I enjoy turning requirements into clean interfaces, connecting frontend experiences to APIs, and collaborating with teams through reviews, documentation, troubleshooting, and steady execution."
+    ],
+    "focusAreas": [
+      "Full-Stack Development",
+      "Frontend/Admin Dashboards",
+      "API Integration",
+      "Technical Support",
+      "Quality Assurance",
+      "Customer-Focused Delivery"
+    ]
+  },
+  "highlights": [
+    {
+      "label": "Web Platforms",
+      "value": "Next.js, Laravel, TypeScript, REST APIs"
+    },
+    {
+      "label": "Operations",
+      "value": "After-sales, warranty coordination, PDI, reporting"
+    },
+    {
+      "label": "Support",
+      "value": "Hardware, software, network troubleshooting"
+    },
+    {
+      "label": "Integrations",
+      "value": "Paystack, Agora APIs, Pickup Mtaani, dashboards"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Mount Kigali University",
+      "program": "Bachelor of Business and Information Technology (BBIT)",
+      "period": "January 2026 - Present",
+      "expectedGraduation": "2029",
+      "location": "Kigali, Rwanda",
+      "description": "Pursuing a BBIT degree to strengthen my foundation in business systems, information technology, software delivery, and technology-driven operations.",
+      "tags": [
+        "Business IT",
+        "Information Systems",
+        "Technology Management",
+        "Expected 2029"
+      ]
+    },
+    {
+      "institution": "Lycee Saint Alexandre Sauli De Muhura",
+      "program": "High School Diploma in Software Development",
+      "period": "September 2021 - August 2024",
+      "location": "Gatsibo, Eastern Rwanda",
+      "description": "Completed software development studies and built a strong foundation in programming, databases, and web development. Collaborated on a school stock management system presented during Open Day.",
+      "tags": [
+        "Software Development",
+        "Programming Basics",
+        "PHP",
+        "JavaScript",
+        "Database Fundamentals"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Hanlink Engineering Co,. Ltd",
+      "role": "After-Sales Assistant & PDI Coordinator",
+      "period": "May 2026 - Current",
+      "location": "Rwanda",
+      "summary": "Support customers after vehicle delivery by coordinating service requests, warranty processes, documentation, reporting, and technical follow-up.",
+      "responsibilities": [
+        "Provide customer support and maintain professional client relationships.",
+        "Coordinate warranty cases, service activities, documentation, and reporting.",
+        "Assist with technical troubleshooting and follow-up on customer issues."
+      ],
+      "tags": [
+        "Customer Support",
+        "Warranty Coordination",
+        "Documentation",
+        "Vehicle Inspection",
+        "Quality Assurance",
+        "Inspection Reporting"
+      ]
+    },
+    {
+      "company": "Infinity Tech Solutions",
+      "role": "Technical Support Engineer",
+      "period": "March 2025 - May 2026",
+      "location": "Kigali, Rwanda",
+      "summary": "Delivered technical support across hardware, software, network troubleshooting, diagnostics, end-user assistance, and technical documentation.",
+      "responsibilities": [
+        "Resolved hardware, software, and network issues for end users.",
+        "Performed system diagnostics and documented technical support activities.",
+        "Assisted customers with troubleshooting, guidance, and follow-up."
+      ],
+      "url": "https://infinitytech.rw/",
+      "tags": [
+        "Technical Support",
+        "Hardware Troubleshooting",
+        "Software Troubleshooting",
+        "Network Troubleshooting",
+        "System Diagnostics",
+        "End-User Assistance"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "category": "Frontend",
+      "items": [
+        "HTML5 & CSS3",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "Bootstrap",
+        "Shadcn UI",        
+        "TanStack Router",
+        "TanStack Query"
+      ]
+    },
+    {
+      "category": "Backend",
+      "items": [
+        "PHP",
+        "Laravel",
+        "Next.js",
+        "Nest.Js",
+        "Serverless Functions",
+        "Node.js",
+        "Express.js",
+        "REST APIs",
+        "MVC Architecture"
+      ]
+    },
+    {
+      "category": "Database",
+      "items": [
+        "MySQL",
+        "Supabase",
+        "Firebase",
+        "PocketBase",
+        "MongoDB",
+        "Database Design",
+        "Database Modeling"
+      ]
+    },
+    {
+      "category": "API & Integration",
+      "items": [
+        "Postman",
+        "API Testing",
+        "API Integration",
+        "JSON",
+        "Paystack API",
+        "Agora APIs",
+        "Pickup Mtaani API"
+      ]
+    },
+    {
+      "category": "DevOps & Tools",
+      "items": [
+        "Docker",
+        "Git",
+        "GitHub",
+        "Vercel",
+        "Deployment",
+        "DNS Management"
+      ]
+    },
+    {
+      "category": "Productivity",
+      "items": [
+        "Microsoft Office Suite",
+        "Google Docs",
+        "Google Sheets",
+        "Google Slides",
+        "Google Drive",
+        "Google Meet",
+        "Canva",
+        "Adobe Photoshop",
+        "Figma",
+        "ClickUp"
+      ]
+    },
+    {
+      "category": "Methodologies",
+      "items": [
+        "Agile Development",
+        "Scrum",
+        "Requirement Analysis",
+        "Project Planning",
+        "Team Collaboration"
+      ]
+    },
+    {
+      "category": "Soft Skills",
+      "items": [
+        "Problem Solving",
+        "Communication",
+        "Technical Support",
+        "Customer Service",
+        "Critical Thinking",
+        "Adaptability",
+        "Documentation",
+        "Time Management"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Smart Round Clinic",
+      "image": "project2",
+      "description": "Telemedicine platform with an admin dashboard for managing healthcare workflows and integrated API-driven features.",
+      "features": [
+        "Admin dashboard development",
+        "API integration",
+        "Team collaboration",
+        "Weekly progress reviews"
+      ],
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "REST APIs"
+      ],
+      "role": "Frontend/Admin Dashboard Developer",
+      "client": "Telemedicine platform",
+      "year": "2026"
+    },
+    {
+      "title": "UremboHub",
+      "image": "project7",
+      "description": "Beauty and cosmetics ecosystem connecting manufacturers, vendors, retailers, and customers.",
+      "features": [
+        "Paystack payment integration",
+        "Agora video conferencing",
+        "Agora streaming APIs",
+        "Delivery tracking",
+        "Pickup Mtaani integration"
+      ],
+      "technologies": [
+        "Next.js",
+        "Nest JS",
+        "REST APIs",
+        "Paystack",
+        "Agora APIs",
+        "Pickup Mtaani APIs",
+        "Docker"
+      ],
+      "role": "Full-Stack Developer",
+      "client": "E-Commerce platform",
+      "year": "2026"
+    },
+    {
+      "title": "Formo",
+      "image": "project9",
+      "description": "Developer-first email platform providing form APIs, submission tracking, email workflows, and developer dashboards.",
+      "features": [
+        "Form APIs",
+        "Submission tracking",
+        "Email workflows",
+        "Developer dashboards"
+      ],
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "PocketBase",
+        "REST APIs"
+      ],
+      "role": "Full-Stack Developer",
+      "client": "Product project",
+      "year": "2025"
+    },
+    {
+      "title": "Projectoo",
+      "image": "project8",
+      "description": "Project management and progress tracking platform for organizing work, monitoring progress, and improving team visibility.",
+      "features": [
+        "Project tracking",
+        "Progress visibility",
+        "Team workflow support"
+      ],
+      "technologies": [
+        "Next.js",
+        "TypeScript"
+      ],
+      "role": "Full-Stack Developer",
+      "client": "Product project",
+      "year": "2025"
+    },
+    {
+      "title": "Tujyane",
+      "image": "project1",
+      "description": "Ride-sharing platform connecting travelers and passengers for shared journeys.",
+      "features": [
+        "Traveler and passenger matching",
+        "Ride listing workflow",
+        "Booking-oriented user experience"
+      ],
+      "technologies": [
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "JavaScript"
+      ],
+      "role": "Full-Stack Developer",
+      "client": "Tujyane",
+      "year": "In development"
+    },
+    {
+      "title": "Hospitality & Booking Management Platform",
+      "image": "project6",
+      "description": "Reservation management platform for guest house, sauna, massage, and restaurant bookings.",
+      "features": [
+        "Guest house booking",
+        "Sauna booking",
+        "Massage booking",
+        "Restaurant booking",
+        "Reservation management"
+      ],
+      "technologies": [
+        "Laravel",
+        "PHP",
+        "MySQL"
+      ],
+      "role": "Full-Stack Laravel Developer",
+      "client": "Hospitality platform",
+      "year": "2024"
+    }
+  ],
+  "resume": {
+    "headline": "Full-Stack Web Developer | Technical Support | After-Sales & PDI Operations",
+    "summary": "Full-stack developer and technical support professional experienced in Next.js, TypeScript, Laravel, PHP, MySQL, REST APIs, customer support, troubleshooting, documentation, after-sales coordination, and vehicle quality inspection.",
+    "sections": [
+      "Profile",
+      "Experience",
+      "Projects",
+      "Education",
+      "Skills"
+    ]
+  }
+}
