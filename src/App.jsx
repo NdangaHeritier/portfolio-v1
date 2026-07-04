@@ -1,67 +1,82 @@
-import SocialLinks from './components/SocialLinks'
-import { Profile } from './components/Profile'
-import { Education } from './components/Education'
-import { Projects } from './components/Projects'
-import { Skills } from './components/Skills'
-import { Experience } from './components/Experience'
-import logo from './assets/LOGO-Color.png'
-import { AboutMe } from './components/AboutMe'
+/* eslint-disable react/prop-types */
+import { useEffect, useMemo, useState } from 'react'
+import { AppHeader } from './components/new/AppHeader.jsx'
+import { AppOverview } from './components/new/AppOverview.jsx'
+import { AppPageHero } from './components/new/AppPageHero.jsx'
+import { AppWork } from './components/new/AppWork.jsx'
+import { AppSkills } from './components/new/AppSkills.jsx'
+import { AppStory } from './components/new/AppStory.jsx'
+import { AppStatus } from './components/new/AppStatus.jsx'
+import { AppBudgetCalculator } from './components/new/AppBudgetCalculator.jsx'
+import { AppContact } from './components/new/AppContact.jsx'
+import { CursorSignature } from './components/new/CursorSignature.jsx'
+import { pages, pageHeroes } from './components/new/appData.js'
+import portfolio from './data/portfolio.json'
 
 function App() {
+  const [activePage, setActivePage] = useState('overview')
+  const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'dark')
+  const [cursor, setCursor] = useState({ x: -120, y: -120 })
 
-  function showNav(){
-    let showLink=document.getElementsByClassName('showLink')[0]
-    if(showLink.innerHTML=='X'){
-      document.querySelector('#HeaderLinks').classList.add('max-sm:hidden')
-      document.querySelector('#HeaderLinks').classList.remove('max-sm:block')
-      showLink.style.backgroundColor="transparent"
-      showLink.innerHTML=`<img src="/bars.png" alt="" />`
-    }else{
-      document.querySelector('#HeaderLinks').classList.add('max-sm:block')
-      document.querySelector('#HeaderLinks').classList.remove('max-sm:hidden')
-      showLink.style.backgroundColor="rgba(12, 8, 2, 0.8)"
-      showLink.innerHTML="X"
-    }
+  const activeHero = useMemo(() => pageHeroes[activePage], [activePage])
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme
+    localStorage.setItem('theme', theme)
+  }, [theme])
+
+  useEffect(() => {
+    const onMove = (event) => setCursor({ x: event.clientX, y: event.clientY })
+    window.addEventListener('pointermove', onMove)
+    return () => window.removeEventListener('pointermove', onMove)
+  }, [])
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add('is-visible')
+        })
+      },
+      { threshold: 0.16 },
+    )
+
+    document.querySelectorAll('.reveal').forEach((element) => observer.observe(element))
+    return () => observer.disconnect()
+  }, [activePage])
+
+  const openPage = (pageId) => {
+    setActivePage(pageId)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
+
   return (
-    <div className='Main'>
-        <div className="Header backdrop-blur-sm sticky top-0 left-0 right-0 z-10">
-          <div className="Title flex">
-            <img src={logo} alt="Logo" height={50} className='h-14 max-sm:h-10' />
-            <span className='ps-0'>danga.</span>
-          </div>
-          <div className="Header-links min-sm:flex max-sm:hidden" id='HeaderLinks'>
-            <div className='p-2 max-sm:my-8 a'><a href="#AboutMe" onClick={()=>{showNav()}}>About</a></div>
-            <div className='p-2 a'><a href="#Education" onClick={()=>{showNav()}}>Education</a></div>
-            <div className='p-2 a'><a href="#Experience" onClick={()=>{showNav()}}>Experience</a></div>
-            <div className='p-2 a'><a href="#Skills" onClick={()=>{showNav()}}>Skills</a></div>
-            <div className='p-2 a'><a href="#Projects" onClick={()=>{showNav()}}>Projects</a></div>
-            <div className='p-2 a'><a href="#Social" onClick={()=>{showNav()}}>Contact</a></div>
-          </div>
-          <div className="bars">
-            <button className="showLink" onClick={()=>{showNav()}}>
-              <img src="/bars.png" alt="" />
-            </button>
-          </div>
+    <main className="site-shell">
+      <CursorSignature cursor={cursor} />
+      <AppHeader
+        activePage={activePage}
+        onNavigate={openPage}
+        theme={theme}
+        onToggleTheme={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+        pages={pages}
+      />
+      <section className="page-stage">
+        <div className="page-panel" key={activePage}>
+          {activeHero && <AppPageHero {...activeHero} />}
+          {activePage === 'overview' && <AppOverview onNavigate={openPage} />}
+          {activePage === 'work' && <AppWork />}
+          {activePage === 'skills' && <AppSkills />}
+          {activePage === 'story' && <AppStory />}
+          {activePage === 'status' && <AppStatus />}
+          {activePage === 'budget' && <AppBudgetCalculator />}
+          {activePage === 'contact' && <AppContact />}
         </div>
-        <div className="Contents pt-10 grid grid-cols-1 gap-y-10">
-          <div className='flex items-center justify-center' id='About'>
-            <Profile/>          
-          </div>
-          <div id='AboutMe'><AboutMe/></div>
-          <div id='Education'><Education/></div>
-          <div id='Experience'><Experience/></div>
-          <div id='Skills'><Skills/></div>
-          <div id='Projects'><Projects/></div>
-          <div id='Social'><SocialLinks/></div>
-        </div>
-        <div className=" flex items-center justify-between max-sm:flex-col bg-zinc-900 p-5 small-text">
-          <p>&copy; &nbsp; Ndanga Heritier, All rights reserved.</p>
-          <div className="fw-semibold max-sm:flex self-end bg-yellow-700/10 max-sm:text-xs rounded-md px-1 py-0.5 border border-yellow-700/70 ring-3 ring-yellow-700/20">
-            <span className='text-yellow-700 fw-bold pe-1'>@</span>dev~ndanga
-          </div>
-        </div>
-    </div>
+      </section>
+      <footer className="footer">
+        <span>© Ndanga Heritier. All rights reserved.</span>
+        <span>@{portfolio.profile.handle}</span>
+      </footer>
+    </main>
   )
 }
 
