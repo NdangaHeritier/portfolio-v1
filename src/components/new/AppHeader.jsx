@@ -7,7 +7,7 @@ export function AppHeader({ activePage, onNavigate, theme, onToggleTheme, pages 
     <header className="topbar">
       <button className="brand" type="button" onClick={() => onNavigate('overview')}>
         <img src={logoColor} alt="" />
-        <span>danga.</span>
+        <span className='text-3xl'>danga.</span>
       </button>
       <nav className="nav-links" aria-label="Main navigation">
         {pages.map((page) => (

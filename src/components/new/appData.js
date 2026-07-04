@@ -1,18 +1,20 @@
 import portfolio from '../../data/portfolio.json'
-import project1 from '../../assets/project1.png'
-import project2 from '../../assets/project2.png'
-import project6 from '../../assets/project6.png'
-import project7 from '../../assets/project7.png'
-import project8 from '../../assets/project8.png'
-import project9 from '../../assets/project9.png'
+import project1 from '../../assets/smartround.jpg'
+import project2 from '../../assets/urembohub.png'
+import project3 from '../../assets/orvantisdigital.png'
+import project4 from '../../assets/formo.png'
+import project5 from '../../assets/projectoo.png'
+import project6 from '../../assets/tujyane.png'
+import project7 from '../../assets/reallabest.png'
 
 export const projectImages = {
   project1,
   project2,
+  project3,
+  project4,
+  project5,
   project6,
   project7,
-  project8,
-  project9,
 }
 
 export const pages = [
@@ -20,7 +22,7 @@ export const pages = [
   { id: 'work', label: 'Work', icon: 'briefcase' },
   { id: 'skills', label: 'Skills', icon: 'layers' },
   { id: 'story', label: 'Story', icon: 'timeline' },
-  { id: 'status', label: 'Status', icon: 'activity' },
+  // { id: 'status', label: 'Status', icon: 'activity' },
   { id: 'budget', label: 'Budget', icon: 'calculator' },
   { id: 'contact', label: 'Contact', icon: 'send' },
 ]

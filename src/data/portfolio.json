@@ -252,7 +252,7 @@
   "projects": [
     {
       "title": "Smart Round Clinic",
-      "image": "project2",
+      "image": "project1",
       "description": "Telemedicine platform with an admin dashboard for managing healthcare workflows and integrated API-driven features.",
       "features": [
         "Admin dashboard development",
@@ -263,15 +263,18 @@
       "technologies": [
         "Next.js",
         "TypeScript",
-        "REST APIs"
+        "REST APIs",
+        "Shadcn UI",
+        "React Charts"
       ],
       "role": "Frontend/Admin Dashboard Developer",
       "client": "Telemedicine platform",
-      "year": "2026"
+      "year": "2026",
+      "url": "https://smartroundclinic.co.ke"
     },
     {
       "title": "UremboHub",
-      "image": "project7",
+      "image": "project2",
       "description": "Beauty and cosmetics ecosystem connecting manufacturers, vendors, retailers, and customers.",
       "features": [
         "Paystack payment integration",
@@ -287,15 +290,41 @@
         "Paystack",
         "Agora APIs",
         "Pickup Mtaani APIs",
-        "Docker"
+        "Docker",
+        "Shadcn UI"
       ],
       "role": "Full-Stack Developer",
       "client": "E-Commerce platform",
-      "year": "2026"
+      "year": "2026",
+      "url": "https://urembohub.com/"
+    },
+    {
+      "title": "Orvantis Digital",
+      "image": "project3",
+      "description": "A landing page for a technology company showcasing services, portfolio, and contact information. with blogging and newsletter subscription features.",
+      "features": [
+        "Landing page development",
+        "Blogging features",
+        "Newsletter subscription",
+        "Responsive design",
+        "CMS integration"
+      ],
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "REST APIs",
+        "CMS Integration",
+        "Responsive Design",
+        "MongoDB"
+      ],
+      "role": "Full-Stack Developer",
+      "client": "Orvantis Digital",
+      "year": "2026",
+      "url": "https://orvantis-dig-app.vercel.app/"
     },
     {
       "title": "Formo",
-      "image": "project9",
+      "image": "project4",
       "description": "Developer-first email platform providing form APIs, submission tracking, email workflows, and developer dashboards.",
       "features": [
         "Form APIs",
@@ -311,11 +340,12 @@
       ],
       "role": "Full-Stack Developer",
       "client": "Product project",
-      "year": "2025"
+      "year": "2025",
+      "url": "https://withformo.vercel.app/"
     },
     {
       "title": "Projectoo",
-      "image": "project8",
+      "image": "project5",
       "description": "Project management and progress tracking platform for organizing work, monitoring progress, and improving team visibility.",
       "features": [
         "Project tracking",
@@ -324,15 +354,18 @@
       ],
       "technologies": [
         "Next.js",
-        "TypeScript"
+        "TypeScript",
+        "Firebase",
+        "TailwindCSS"
       ],
       "role": "Full-Stack Developer",
       "client": "Product project",
-      "year": "2025"
+      "year": "2025",
+      "url": "https://project-oo.vercel.app/"
     },
     {
-      "title": "Tujyane",
-      "image": "project1",
+      "title": "Tujyane Travels",
+      "image": "project6",
       "description": "Ride-sharing platform connecting travelers and passengers for shared journeys.",
       "features": [
         "Traveler and passenger matching",
@@ -347,27 +380,30 @@
       ],
       "role": "Full-Stack Developer",
       "client": "Tujyane",
-      "year": "In development"
+      "year": "2025",
+      "url": "https://tujyanedevistooconcerned.vercel.app/"
     },
     {
-      "title": "Hospitality & Booking Management Platform",
-      "image": "project6",
-      "description": "Reservation management platform for guest house, sauna, massage, and restaurant bookings.",
+      "title": "Real Labest",
+      "image": "project7",
+      "description": "A multi-page portfolio and service showcase website for a real estate company, highlighting their construction, logistics and Equipment rental services.",
       "features": [
-        "Guest house booking",
-        "Sauna booking",
-        "Massage booking",
-        "Restaurant booking",
-        "Reservation management"
+        "Multi-page portfolio",
+        "Service showcase",
+        "Responsive design",
+        "Contact forms",
+        "Blogging features",
+        "SEO Optimization"
       ],
       "technologies": [
-        "Laravel",
-        "PHP",
-        "MySQL"
+        "React.Js",
+        "TypeScript",
+        "Firebase"
       ],
-      "role": "Full-Stack Laravel Developer",
-      "client": "Hospitality platform",
-      "year": "2024"
+      "role": "Full-Stack Developer",
+      "client": "Real Labest Ltd",
+      "year": "2025",
+      "url": "https://reallabest.vercel.app/"
     }
   ],
   "resume": {

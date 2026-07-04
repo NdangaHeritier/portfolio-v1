@@ -1,6 +1,6 @@
 import { Icon } from './appHelpers.jsx'
 import { portfolio, achievements } from './appData.js'
-import profilePhoto from '/ndanga.png'
+import profilePhoto from '/ndangah.png'
 
 export function AppOverview({ onNavigate }) {
   const { profile } = portfolio
