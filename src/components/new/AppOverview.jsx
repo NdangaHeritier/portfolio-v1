@@ -1,6 +1,7 @@
 import { Icon } from './appHelpers.jsx'
 import { portfolio, achievements } from './appData.js'
 import profilePhoto from '/ndangah.png'
+import { ImagePreviewer } from '../UI/ImagePreviewer'
 
 export function AppOverview({ onNavigate }) {
   const { profile } = portfolio
@@ -33,7 +34,7 @@ export function AppOverview({ onNavigate }) {
           </div>
           <div className="portrait-card reveal">
             <div className="portrait-frame">
-              <img src={profilePhoto} alt={profile.name} />
+              <ImagePreviewer src={profilePhoto} alt={profile.name} />
             </div>
             <div className="status-card">
               <span>Currently</span>
